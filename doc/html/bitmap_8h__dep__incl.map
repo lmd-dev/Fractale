@@ -1,0 +1,18 @@
+<map id="bitmap.h" name="bitmap.h">
+<area shape="rect" id="node2" href="$bitmap-array_8h.html" title="bitmap&#45;array.h" alt="" coords="128,80,233,107"/>
+<area shape="rect" id="node5" href="$bitmap-factory_8h.html" title="bitmap&#45;factory.h" alt="" coords="258,80,373,107"/>
+<area shape="rect" id="node7" href="$bitmap-vector_8h.html" title="bitmap&#45;vector.h" alt="" coords="397,80,508,107"/>
+<area shape="rect" id="node9" href="$bitmap_8cpp.html" title="bitmap.cpp" alt="" coords="828,80,915,107"/>
+<area shape="rect" id="node10" href="$fractale_8h.html" title="fractale.h" alt="" coords="678,80,753,107"/>
+<area shape="rect" id="node13" href="$fractale-mandelbrot_8h.html" title="fractale&#45;mandelbrot.h" alt="" coords="644,155,787,181"/>
+<area shape="rect" id="node15" href="$fractale-julia_8h.html" title="fractale&#45;julia.h" alt="" coords="924,155,1027,181"/>
+<area shape="rect" id="node3" href="$bitmap-array_8cpp.html" title="bitmap&#45;array.cpp" alt="" coords="5,155,124,181"/>
+<area shape="rect" id="node4" href="$bitmap-factory_8cpp.html" title="bitmap&#45;factory.cpp" alt="" coords="148,155,277,181"/>
+<area shape="rect" id="node6" href="$controller_8cpp.html" title="controller.cpp" alt="" coords="304,229,404,256"/>
+<area shape="rect" id="node8" href="$bitmap-vector_8cpp.html" title="bitmap&#45;vector.cpp" alt="" coords="353,155,477,181"/>
+<area shape="rect" id="node11" href="$fractale-factory_8h.html" title="fractale&#45;factory.h" alt="" coords="501,155,620,181"/>
+<area shape="rect" id="node17" href="$fractale_8cpp.html" title="fractale.cpp" alt="" coords="811,155,900,181"/>
+<area shape="rect" id="node12" href="$fractale-factory_8cpp.html" title="fractale&#45;factory.cpp" alt="" coords="705,229,837,256"/>
+<area shape="rect" id="node14" href="$fractale-mandelbrot_8cpp.html" title="fractale&#45;mandelbrot.cpp" alt="" coords="523,229,681,256"/>
+<area shape="rect" id="node16" href="$fractale-julia_8cpp.html" title="fractale&#45;julia.cpp" alt="" coords="917,229,1033,256"/>
+</map>

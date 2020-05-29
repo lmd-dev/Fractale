@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fractale:  Fichier source de bitmap.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fractale
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bitmap.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bitmap_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pixel_8h.html">pixel.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_bitmap.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bitmap.html">Bitmap</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">//Width of the picture</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">//Height of the picture</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> saveFileHeader(std::ostream&amp; stream) <span class="keyword">const</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> saveBitmapHeader(std::ostream&amp; stream) <span class="keyword">const</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> savePalette(std::ostream&amp; stream) <span class="keyword">const</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> savePixels(std::ostream&amp; stream) <span class="keyword">const</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getFileSize() <span class="keyword">const</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getHeaderFileSize() <span class="keyword">const</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getHeaderBitmapSize() <span class="keyword">const</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getPaletteSize() <span class="keyword">const</span>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getPixelsSize() <span class="keyword">const</span>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_bitmap.html#ab2bd2bdb89fe9680bb735095dfcfdd07">Bitmap</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; w, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; h);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_bitmap.html#a62a2ff9c6d1e37ed89be41167739b195">setSize</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; w, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; h);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; <a class="code" href="class_bitmap.html#ad1bb0094b1a51b9e5968a7375359bfac">getWidth</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; <a class="code" href="class_bitmap.html#a586842515fed160638dc4261c8d00f56">getHeight</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class_pixel.html">Pixel</a>&amp; <a class="code" href="class_bitmap.html#ac28d713697ac900e255a8d40f2a410a4">at</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; x, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; y) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_pixel.html">Pixel</a>&amp; <a class="code" href="class_bitmap.html#ac28d713697ac900e255a8d40f2a410a4">at</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; x, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; y) = 0;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_bitmap.html#a7f9d8538a541fb3377e41c8bc08a9763">save</a>(std::ostream&amp; stream) <span class="keyword">const</span>;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;std::ostream&amp; <a class="code" href="bitmap_8h.html#ac1b6c4182305b11a42089cb8877a5805">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> <a class="code" href="class_bitmap.html">Bitmap</a>&amp; bitmap);</div><div class="ttc" id="bitmap_8h_html_ac1b6c4182305b11a42089cb8877a5805"><div class="ttname"><a href="bitmap_8h.html#ac1b6c4182305b11a42089cb8877a5805">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;stream, const Bitmap &amp;bitmap)</div><div class="ttdef"><b>Definition:</b> <a href="bitmap_8cpp_source.html#l00131">bitmap.cpp:131</a></div></div>
+<div class="ttc" id="class_bitmap_html_ab2bd2bdb89fe9680bb735095dfcfdd07"><div class="ttname"><a href="class_bitmap.html#ab2bd2bdb89fe9680bb735095dfcfdd07">Bitmap::Bitmap</a></div><div class="ttdeci">Bitmap(const unsigned int &amp;w, const unsigned int &amp;h)</div><div class="ttdef"><b>Definition:</b> <a href="bitmap_8cpp_source.html#l00004">bitmap.cpp:4</a></div></div>
+<div class="ttc" id="class_bitmap_html_ad1bb0094b1a51b9e5968a7375359bfac"><div class="ttname"><a href="class_bitmap.html#ad1bb0094b1a51b9e5968a7375359bfac">Bitmap::getWidth</a></div><div class="ttdeci">const unsigned int &amp; getWidth() const</div><div class="ttdef"><b>Definition:</b> <a href="bitmap_8cpp_source.html#l00015">bitmap.cpp:15</a></div></div>
+<div class="ttc" id="class_bitmap_html_a7f9d8538a541fb3377e41c8bc08a9763"><div class="ttname"><a href="class_bitmap.html#a7f9d8538a541fb3377e41c8bc08a9763">Bitmap::save</a></div><div class="ttdeci">void save(std::ostream &amp;stream) const</div><div class="ttdef"><b>Definition:</b> <a href="bitmap_8cpp_source.html#l00025">bitmap.cpp:25</a></div></div>
+<div class="ttc" id="pixel_8h_html"><div class="ttname"><a href="pixel_8h.html">pixel.h</a></div></div>
+<div class="ttc" id="class_bitmap_html_a62a2ff9c6d1e37ed89be41167739b195"><div class="ttname"><a href="class_bitmap.html#a62a2ff9c6d1e37ed89be41167739b195">Bitmap::setSize</a></div><div class="ttdeci">virtual void setSize(const unsigned int &amp;w, const unsigned int &amp;h)</div><div class="ttdef"><b>Definition:</b> <a href="bitmap_8cpp_source.html#l00009">bitmap.cpp:9</a></div></div>
+<div class="ttc" id="class_bitmap_html_ac28d713697ac900e255a8d40f2a410a4"><div class="ttname"><a href="class_bitmap.html#ac28d713697ac900e255a8d40f2a410a4">Bitmap::at</a></div><div class="ttdeci">virtual const Pixel &amp; at(const unsigned int &amp;x, const unsigned int &amp;y) const =0</div></div>
+<div class="ttc" id="class_bitmap_html_a586842515fed160638dc4261c8d00f56"><div class="ttname"><a href="class_bitmap.html#a586842515fed160638dc4261c8d00f56">Bitmap::getHeight</a></div><div class="ttdeci">const unsigned int &amp; getHeight() const</div><div class="ttdef"><b>Definition:</b> <a href="bitmap_8cpp_source.html#l00020">bitmap.cpp:20</a></div></div>
+<div class="ttc" id="class_bitmap_html"><div class="ttname"><a href="class_bitmap.html">Bitmap</a></div><div class="ttdef"><b>Definition:</b> <a href="bitmap_8h_source.html#l00006">bitmap.h:6</a></div></div>
+<div class="ttc" id="class_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00007">pixel.h:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

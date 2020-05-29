@@ -1,0 +1,10 @@
+<map id="fractale.h" name="fractale.h">
+<area shape="rect" id="node2" href="$fractale-factory_8h.html" title="fractale&#45;factory.h" alt="" coords="65,80,184,107"/>
+<area shape="rect" id="node5" href="$fractale-mandelbrot_8h.html" title="fractale&#45;mandelbrot.h" alt="" coords="208,80,351,107"/>
+<area shape="rect" id="node7" href="$fractale-julia_8h.html" title="fractale&#45;julia.h" alt="" coords="375,80,477,107"/>
+<area shape="rect" id="node9" href="$fractale_8cpp.html" title="fractale.cpp" alt="" coords="501,80,591,107"/>
+<area shape="rect" id="node3" href="$controller_8cpp.html" title="controller.cpp" alt="" coords="5,155,105,181"/>
+<area shape="rect" id="node4" href="$fractale-factory_8cpp.html" title="fractale&#45;factory.cpp" alt="" coords="129,155,261,181"/>
+<area shape="rect" id="node6" href="$fractale-mandelbrot_8cpp.html" title="fractale&#45;mandelbrot.cpp" alt="" coords="286,155,443,181"/>
+<area shape="rect" id="node8" href="$fractale-julia_8cpp.html" title="fractale&#45;julia.cpp" alt="" coords="468,155,584,181"/>
+</map>
